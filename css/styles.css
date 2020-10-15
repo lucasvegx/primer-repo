@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+@import url("https://use.typekit.net/rbu0wfv.css");
+/*---General----------------------------*/
+html {
+  background-color: #59603f; }
+
+body {
+  color: whitesmoke;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: #59603f; }
+
+h2 {
+  font-family: 'Montserrat', sans-serif; }
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em; }
+
+.encabezado {
+  padding: 3em; }
+
+.encabezado h2 {
+  font-size: 5em;
+  margin-bottom: 0em; }
+
+/*--------------barra del header---------------------*/
+body header {
+  color: whitesmoke; }
+
+.contlogo__logo {
+  position: absolute;
+  top: 0.5em;
+  left: 2em;
+  z-index: 1000000;
+  height: 100px; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  z-index: 1000000; }
+
+nav ul li {
+  list-style: none;
+  display: inline-block; }
+
+nav ul {
+  text-align: right; }
+
+nav ul li a {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: #cca063;
+  text-align: center;
+  margin: 0 1em 0 1em; }
+
+nav ul li a:hover {
+  display: block;
+  border-bottom: solid 2px;
+  color: #cca063;
+  text-decoration: none; }
+
+/*------------paquete intro----------------*/
+.slide {
+  z-index: 1;
+  margin-bottom: 2em;
+  border-bottom: solid 2px #cca063; }
+
+.intro {
+  position: absolute;
+  bottom: 10em;
+  left: 5em;
+  z-index: 100000; }
+
+.intro__parrafo {
+  text-shadow: -1px -1px 10px black; }
+
+.intro__titulo {
+  text-shadow: -1px -1px 10px black; }
+
+/*------------------menuMobile----------------------*/
+@media (min-width: 700px) {
+  .menu {
+    display: none; } }
+
+.menu {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  z-index: 1000; }
+
+.dropdown-toggle {
+  background-color: #cca063; }
+
+.dropdown-toggle:hover {
+  background-color: #cca063; }
+
+/*-------------parrafo presentacion---------------*/
+.parrafopres {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 4em;
+  padding-right: 4em;
+  text-align: center;
+  font-size: 1.3em; }
+
+/*--------------servicios--------------*/
+.cartas {
+  margin-top: 2em; }
+
+.card {
+  background-color: #cca063; }
+
+.card-title {
+  font-size: 1em; }
+
+.card-text {
+  font-size: 0.9em; }
+
+.btn-primary {
+  background-color: #cca063;
+  border: solid 1px white;
+  border-radius: 0px; }
+
+.btn-primary:hover {
+  background-color: white;
+  border: solid 1px white;
+  border-radius: 0px;
+  color: #cca063; }
+
+/*-----------------FOOTER----------------------*/
+footer {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding: 2em;
+  font-size: 1em; }
+
+.redes {
+  list-style: none;
+  padding: none;
+  display: flex;
+  justify-content: center;
+  padding: 0em; }
+
+.redes li {
+  margin: 1em; }
+
+.redes li a img {
+  height: 1.5em; }
+
+/*--------------------ajustesmobile---------------------*/
+@media (max-width: 700px) {
+  nav {
+    display: none; }
+  .parrafopres {
+    font-size: 1em; }
+  .intro {
+    position: relative;
+    bottom: 0em;
+    left: 0em;
+    z-index: 100000;
+    background-color: #cca063;
+    padding: 1em; }
+  .intro p, .intro h1 {
+    text-shadow: none;
+    text-align: center; }
+  .tipos {
+    display: none; }
+  /*    
+    grid-template-areas: 
+        "imgcafe1"
+        "cafe1"
+        "imgcafe2"
+        "cafe2"
+        "imgcafe3"
+        "cafe3";
+    grid-template-columns: 100%;
+    grid-auto-rows: 2fr 1fr 2fr 1fr 2fr 1fr;
+    } */ }
+
+/*-------------------------------------------*/
+.enzabezado h2 {
+  text-align: center; }
+
+.tipos {
+  display: grid;
+  grid-template-areas: "imgcafe1 cafe1" "imgcafe2 cafe2" "imgcafe3 cafe3";
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: 1fr 1fr 1fr;
+  align-items: stretch; }
+
+.cafe1 {
+  grid-area: cafe1;
+  background-color: #cca063;
+  height: auto;
+  text-align: center;
+  padding: 6em; }
+
+.cafe2 {
+  grid-area: cafe2;
+  background-color: #cca063;
+  height: auto;
+  text-align: center;
+  padding: 6em; }
+
+.cafe3 {
+  grid-area: cafe3;
+  background-color: #cca063;
+  height: auto;
+  text-align: center;
+  padding: 6em; }
+
+.imgcafe1 {
+  grid-area: imgcafe1; }
+
+.imgcafe2 {
+  grid-area: imgcafe2; }
+
+.imgcafe1 {
+  grid-area: imgcafe3; }
+
+.imagenCafe {
+  width: 100%; }
+
+.tipos div h3 {
+  margin-bottom: 5em;
+  font-size: 2em;
+  font-weight: 400; }
+
+.tipos div a {
+  color: white;
+  text-decoration-line: none;
+  border: solid 1px white;
+  font-size: 1.5em;
+  padding: 0.5em; }
+
+.tipos div a:hover {
+  color: #cca063;
+  text-decoration-line: none;
+  border: solid 1px white;
+  font-size: 1.5em;
+  padding: 0.5em;
+  background-color: white; }
+
+/*---------------maquinas--------------------*/
+#maquinas h3 {
+  font-size: 5em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-transform: uppercase; }
+
+#artmaquinas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 5em;
+  padding-right: 5em;
+  flex-wrap: wrap; }
+
+.artmaquinas__div {
+  font-size: 1.5em;
+  margin-top: 1.5em; }
+
+/*-----------------contacto-------------------*/
+#nosotros {
+  padding: 3em;
+  font-size: 1em; }
+
+#nosotros h2 {
+  font-size: 5em;
+  margin-bottom: 0.5em; }
+
+#formymapa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  margin-left: 3em;
+  margin-right: 3em;
+  flex-wrap: wrap; }
+
+.inputform {
+  margin-bottom: 2em;
+  margin-top: 0.5em;
+  background-color: #59603f;
+  border-bottom: solid 2px #cca063;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 20em; }
+
+#textarea {
+  margin-bottom: 2em;
+  margin-top: 0.5em;
+  background-color: #59603f;
+  border-bottom: solid 2px #cca063;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 20em;
+  height: 10em; }
+
+.formbutton {
+  display: block;
+  background-color: #cca063;
+  font-family: 'Montserrat', sans-serif;
+  border-style: none;
+  border: solid 2px #cca063;
+  color: white;
+  font-size: 1em; }
+
+.formbutton:hover {
+  display: block;
+  background-color: #59603f;
+  font-family: 'Montserrat', sans-serif;
+  border-style: none;
+  border: solid 2px #cca063;
+  color: white;
+  font-size: 1em; }
