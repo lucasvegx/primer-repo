@@ -19,7 +19,8 @@ h3 {
   font-size: 1em; }
 
 .encabezado {
-  padding: 3em; }
+  padding: 3em;
+  margin-top: 3em; }
 
 .encabezado h2 {
   font-size: 5em;
@@ -80,7 +81,8 @@ nav ul li a:hover {
   text-shadow: -1px -1px 10px black; }
 
 .intro__titulo {
-  text-shadow: -1px -1px 10px black; }
+  text-shadow: -1px -1px 10px black;
+  font-weight: 800; }
 
 /*------------------menuMobile----------------------*/
 @media (min-width: 700px) {
@@ -112,8 +114,9 @@ nav ul li a:hover {
 .cartas {
   margin-top: 2em; }
 
-.card {
-  background-color: #cca063; }
+div.card {
+  background-color: #cca063;
+  margin-left: 0px; }
 
 .card-title {
   font-size: 1em; }
@@ -131,6 +134,9 @@ nav ul li a:hover {
   border: solid 1px white;
   border-radius: 0px;
   color: #cca063; }
+
+.cartadiv {
+  margin-top: 2em; }
 
 /*-----------------FOOTER----------------------*/
 footer {
@@ -152,7 +158,7 @@ footer {
 .redes li a img {
   height: 1.5em; }
 
-/*--------------------ajustesmobile---------------------*/
+/*--------------------ajustesmobile----------------------------------------------*/
 @media (max-width: 700px) {
   nav {
     display: none; }
@@ -168,21 +174,48 @@ footer {
   .intro p, .intro h1 {
     text-shadow: none;
     text-align: center; }
-  .tipos {
-    display: none; }
-  /*    
-    grid-template-areas: 
-        "imgcafe1"
-        "cafe1"
-        "imgcafe2"
-        "cafe2"
-        "imgcafe3"
-        "cafe3";
+  section.tipos {
+    display: grid;
+    grid-template-areas: "imgcafe1" "cafe1" "imgcafe2" "cafe2" "imgcafe3" "cafe3";
     grid-template-columns: 100%;
-    grid-auto-rows: 2fr 1fr 2fr 1fr 2fr 1fr;
-    } */ }
+    grid-auto-rows: 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr; }
+  div.cafe1 {
+    grid-area: cafe1;
+    background-color: #cca063;
+    height: auto;
+    text-align: center;
+    padding: 2em; }
+  div.cafe2 {
+    grid-area: cafe2;
+    background-color: #cca063;
+    height: auto;
+    text-align: center;
+    padding: 2em; }
+  div.cafe3 {
+    grid-area: cafe3;
+    background-color: #cca063;
+    height: auto;
+    text-align: center;
+    padding: 2em; }
+  section.tipos div h3 {
+    margin-bottom: 2em;
+    font-size: 1.2em;
+    font-weight: 400; }
+  section.tipos div a {
+    color: white;
+    text-decoration-line: none;
+    border: solid 1px white;
+    font-size: 1.5em;
+    padding: 0.5em; }
+  .mapa {
+    padding: 3em; }
+  .mapa iframe {
+    width: 100%; }
+  .cartadiv {
+    margin-top: 2em;
+    padding-left: 3em; } }
 
-/*-------------------------------------------*/
+/*------------------------------------------------------------------*/
 .enzabezado h2 {
   text-align: center; }
 
@@ -190,8 +223,7 @@ footer {
   display: grid;
   grid-template-areas: "imgcafe1 cafe1" "imgcafe2 cafe2" "imgcafe3 cafe3";
   grid-template-columns: 50% 50%;
-  grid-auto-rows: 1fr 1fr 1fr;
-  align-items: stretch; }
+  grid-auto-rows: 1fr 1fr 1fr; }
 
 .cafe1 {
   grid-area: cafe1;
@@ -220,7 +252,7 @@ footer {
 .imgcafe2 {
   grid-area: imgcafe2; }
 
-.imgcafe1 {
+.imgcafe3 {
   grid-area: imgcafe3; }
 
 .imagenCafe {
