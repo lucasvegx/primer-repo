@@ -213,7 +213,17 @@ footer {
     width: 100%; }
   .cartadiv {
     margin-top: 2em;
-    padding-left: 3em; } }
+    padding-left: 3em; }
+  .encabezado h2 {
+    font-size: 2em;
+    margin-bottom: 1em; }
+  div.artmaquinas__div {
+    font-size: 1em; }
+  section#nosotros h2 {
+    font-size: 2em;
+    margin-bottom: 1em; }
+  section#nosotros p {
+    font-size: 1em; } }
 
 /*------------------------------------------------------------------*/
 .enzabezado h2 {
@@ -279,20 +289,12 @@ footer {
   background-color: white; }
 
 /*---------------maquinas--------------------*/
-#maquinas h3 {
-  font-size: 5em;
-  padding-top: 0.3em;
-  padding-bottom: 0.3em;
-  padding-left: 1em;
-  padding-right: 1em;
-  text-transform: uppercase; }
-
 #artmaquinas {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 5em;
-  padding-right: 5em;
+  padding-left: 3em;
+  padding-right: 3em;
   flex-wrap: wrap; }
 
 .artmaquinas__div {
