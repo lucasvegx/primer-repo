@@ -300,7 +300,8 @@ footer {
     }
     
     .mapa {
-    padding: 3em;    
+    padding-top: 3em;
+    padding-bottom: 3em;
     }
     
     .mapa iframe {
@@ -328,6 +329,10 @@ footer {
     
     section#nosotros p{
     font-size: 1em;    
+    }
+    
+    #formulario{
+    padding-right: 1em;
     }
 
 }

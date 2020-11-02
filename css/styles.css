@@ -208,7 +208,8 @@ footer {
     font-size: 1.5em;
     padding: 0.5em; }
   .mapa {
-    padding: 3em; }
+    padding-top: 3em;
+    padding-bottom: 3em; }
   .mapa iframe {
     width: 100%; }
   .cartadiv {
@@ -223,7 +224,9 @@ footer {
     font-size: 2em;
     margin-bottom: 1em; }
   section#nosotros p {
-    font-size: 1em; } }
+    font-size: 1em; }
+  #formulario {
+    padding-right: 1em; } }
 
 /*------------------------------------------------------------------*/
 .enzabezado h2 {
